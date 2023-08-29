@@ -3,6 +3,7 @@ import Header from "./Header";
 import Product from "./Product";
 import Footer from "./Footer";
 import Data from "./data";
+import Text from "./Text"
 
 function App (){
     return <div>
@@ -10,6 +11,7 @@ function App (){
         { Data.map((data) => (
             <Product head={data.head} price={data.price} units={data.units} image={data.image}/>
         )) }
+        <Text/>
        <Footer/>
     </div>
 };
